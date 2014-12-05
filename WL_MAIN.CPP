@@ -9,7 +9,9 @@
 #include "wl_def.h"
 #pragma hdrstop
 #include "wl_atmos.h"
-#include <SDL_syswm.h>
+#ifndef __APPLE__
+    #include <SDL_syswm.h>
+#endif
 
 
 /*
